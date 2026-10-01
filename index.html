@@ -1,0 +1,1580 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>RM Fashion House | Define Your Style</title>
+
+    <meta
+        name="description"
+        content="RM Fashion House — Modern essentials, timeless silhouettes and contemporary fashion."
+    >
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- Font Awesome -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- =========================================
+         PAGE LOADER
+    ========================================== -->
+
+    <div class="page-loader" id="pageLoader">
+        <div class="loader-brand">RM</div>
+        <div class="loader-line">
+            <span></span>
+        </div>
+        <p>FASHION HOUSE</p>
+    </div>
+
+
+    <!-- =========================================
+         CUSTOM CURSOR
+    ========================================== -->
+
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+
+    <!-- =========================================
+         ANNOUNCEMENT BAR
+    ========================================== -->
+
+    <div class="announcement-bar">
+        <div class="announcement-track">
+
+            <span>FREE SHIPPING ON ORDERS OVER $100</span>
+            <span>✦</span>
+            <span>NEW SEASON / NEW ATTITUDE</span>
+            <span>✦</span>
+            <span>RM FASHION HOUSE</span>
+            <span>✦</span>
+
+            <span>FREE SHIPPING ON ORDERS OVER $100</span>
+            <span>✦</span>
+            <span>NEW SEASON / NEW ATTITUDE</span>
+            <span>✦</span>
+            <span>RM FASHION HOUSE</span>
+            <span>✦</span>
+
+        </div>
+    </div>
+
+
+    <!-- =========================================
+         NAVBAR
+    ========================================== -->
+
+    <header class="navbar" id="navbar">
+
+        <div class="nav-container">
+
+            <a href="#home" class="brand">
+                <span class="brand-main">RM</span>
+                <span class="brand-sub">FASHION HOUSE</span>
+            </a>
+
+
+            <nav class="desktop-nav">
+
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#new-arrivals" class="nav-link">New Arrivals</a>
+                <a href="#collections" class="nav-link">Collections</a>
+                <a href="#shop" class="nav-link">Shop</a>
+                <a href="#lookbook" class="nav-link">Lookbook</a>
+                <a href="#about" class="nav-link">About</a>
+
+            </nav>
+
+
+            <div class="nav-actions">
+
+                <button class="nav-icon search-trigger" aria-label="Search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+
+                <button class="nav-icon wishlist-trigger" aria-label="Wishlist">
+                    <i class="fa-regular fa-heart"></i>
+                    <span class="nav-count wishlist-count">0</span>
+                </button>
+
+                <button class="nav-icon cart-trigger" aria-label="Shopping bag">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <span class="nav-count cart-count">0</span>
+                </button>
+
+                <button class="menu-toggle" id="menuToggle" aria-label="Open menu">
+                    <span></span>
+                    <span></span>
+                </button>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- =========================================
+         MOBILE MENU
+    ========================================== -->
+
+    <div class="mobile-menu" id="mobileMenu">
+
+        <div class="mobile-menu-inner">
+
+            <div class="mobile-menu-top">
+                <span>MENU</span>
+
+                <button class="mobile-close" id="mobileClose">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+
+
+            <nav class="mobile-nav">
+
+                <a href="#home">Home <span>01</span></a>
+                <a href="#new-arrivals">New Arrivals <span>02</span></a>
+                <a href="#collections">Collections <span>03</span></a>
+                <a href="#shop">Shop <span>04</span></a>
+                <a href="#lookbook">Lookbook <span>05</span></a>
+                <a href="#about">About <span>06</span></a>
+
+            </nav>
+
+
+            <div class="mobile-menu-footer">
+
+                <p>FOLLOW RM</p>
+
+                <div class="mobile-socials">
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- =========================================
+         SEARCH OVERLAY
+    ========================================== -->
+
+    <div class="search-overlay" id="searchOverlay">
+
+        <button class="search-close" id="searchClose">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+
+        <div class="search-content">
+
+            <p class="search-label">SEARCH RM</p>
+
+            <div class="search-box">
+
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Search products..."
+                    autocomplete="off"
+                >
+
+                <button id="searchSubmit">
+                    <i class="fa-solid fa-arrow-right"></i>
+                </button>
+
+            </div>
+
+            <div class="search-suggestions">
+
+                <span>Popular:</span>
+
+                <button>Oversized T-Shirts</button>
+                <button>Denim</button>
+                <button>Jackets</button>
+                <button>Accessories</button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <main>
+
+
+        <!-- =========================================
+             HERO
+        ========================================== -->
+
+        <section class="hero" id="home">
+
+            <div class="hero-image"></div>
+
+            <div class="hero-overlay"></div>
+
+
+            <div class="hero-content">
+
+                <p class="hero-eyebrow">
+                    RM FASHION HOUSE / SPRING — SUMMER 2026
+                </p>
+
+                <h1>
+                    DEFINE
+                    <span>YOUR STYLE.</span>
+                </h1>
+
+                <p class="hero-description">
+                    Contemporary silhouettes. Refined essentials.
+                    Fashion designed for the way you move.
+                </p>
+
+
+                <div class="hero-buttons">
+
+                    <a href="#shop" class="btn btn-light">
+                        SHOP MEN
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                    <a href="#collections" class="btn btn-outline">
+                        EXPLORE COLLECTION
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="hero-side-text">
+                <span>EST. 2026</span>
+                <span>DHaka / WORLDWIDE</span>
+            </div>
+
+
+            <div class="hero-bottom">
+
+                <span>SCROLL TO EXPLORE</span>
+
+                <div class="scroll-line">
+                    <span></span>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================================
+             INTRO STATEMENT
+        ========================================== -->
+
+        <section class="intro-section">
+
+            <div class="container">
+
+                <div class="section-number">01 / 06</div>
+
+                <div class="intro-content">
+
+                    <p class="eyebrow">THE RM PHILOSOPHY</p>
+
+                    <h2>
+                        Fashion is not
+                        <em>just</em> what you wear.
+                        It's how you <span>arrive.</span>
+                    </h2>
+
+                    <p class="intro-text">
+                        RM Fashion House creates modern pieces for people
+                        who don't need to follow the room. Clean lines,
+                        considered details and effortless confidence.
+                    </p>
+
+                    <a href="#about" class="text-link">
+                        DISCOVER OUR STORY
+                        <span>↗</span>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================================
+             NEW ARRIVALS
+        ========================================== -->
+
+        <section class="products-section" id="new-arrivals">
+
+            <div class="container">
+
+                <div class="section-header">
+
+                    <div>
+                        <p class="eyebrow">01 / NEW SEASON</p>
+
+                        <h2>New Arrivals</h2>
+                    </div>
+
+                    <a href="#shop" class="view-all">
+                        VIEW ALL
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                </div>
+
+
+                <div class="product-grid">
+
+
+                    <!-- PRODUCT 01 -->
+
+                    <article class="product-card">
+
+                        <div class="product-image">
+
+                            <img
+                                src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=1000&q=85"
+                                alt="Essential oversized white t-shirt"
+                            >
+
+                            <span class="product-tag">NEW</span>
+
+                            <button class="wishlist-btn" aria-label="Add to wishlist">
+                                <i class="fa-regular fa-heart"></i>
+                            </button>
+
+                            <button class="quick-add">
+                                QUICK ADD
+                            </button>
+
+                        </div>
+
+                        <div class="product-info">
+
+                            <div>
+                                <h3>Essential Oversized Tee</h3>
+                                <p>Heavyweight Cotton / Ivory</p>
+                            </div>
+
+                            <span class="price">$48</span>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- PRODUCT 02 -->
+
+                    <article class="product-card">
+
+                        <div class="product-image">
+
+                            <img
+                                src="https://images.unsplash.com/photo-1551488831-00ddcb6c6bd3?auto=format&fit=crop&w=1000&q=85"
+                                alt="Minimal black shirt"
+                            >
+
+                            <button class="wishlist-btn" aria-label="Add to wishlist">
+                                <i class="fa-regular fa-heart"></i>
+                            </button>
+
+                            <button class="quick-add">
+                                QUICK ADD
+                            </button>
+
+                        </div>
+
+                        <div class="product-info">
+
+                            <div>
+                                <h3>Relaxed Structure Shirt</h3>
+                                <p>Premium Cotton / Black</p>
+                            </div>
+
+                            <span class="price">$72</span>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- PRODUCT 03 -->
+
+                    <article class="product-card">
+
+                        <div class="product-image">
+
+                            <img
+                                src="https://images.unsplash.com/photo-1542272604-787c3835535d?auto=format&fit=crop&w=1000&q=85"
+                                alt="Modern blue denim jeans"
+                            >
+
+                            <span class="product-tag sale">LIMITED</span>
+
+                            <button class="wishlist-btn" aria-label="Add to wishlist">
+                                <i class="fa-regular fa-heart"></i>
+                            </button>
+
+                            <button class="quick-add">
+                                QUICK ADD
+                            </button>
+
+                        </div>
+
+                        <div class="product-info">
+
+                            <div>
+                                <h3>Signature Straight Denim</h3>
+                                <p>Washed Denim / Indigo</p>
+                            </div>
+
+                            <span class="price">$89</span>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- PRODUCT 04 -->
+
+                    <article class="product-card">
+
+                        <div class="product-image">
+
+                            <img
+                                src="https://images.unsplash.com/photo-1591047139829-d91aecb6caea?auto=format&fit=crop&w=1000&q=85"
+                                alt="Premium neutral jacket"
+                            >
+
+                            <button class="wishlist-btn" aria-label="Add to wishlist">
+                                <i class="fa-regular fa-heart"></i>
+                            </button>
+
+                            <button class="quick-add">
+                                QUICK ADD
+                            </button>
+
+                        </div>
+
+                        <div class="product-info">
+
+                            <div>
+                                <h3>Utility Overshirt</h3>
+                                <p>Structured Cotton / Sand</p>
+                            </div>
+
+                            <span class="price">$110</span>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================================
+             COLLECTIONS
+        ========================================== -->
+
+        <section class="collections-section" id="collections">
+
+            <div class="container">
+
+                <div class="section-header">
+
+                    <div>
+                        <p class="eyebrow">02 / COLLECTIONS</p>
+                        <h2>Find Your Frame</h2>
+                    </div>
+
+                    <p class="section-description">
+                        Designed around movement, confidence
+                        and everyday expression.
+                    </p>
+
+                </div>
+
+
+                <div class="collection-grid">
+
+
+                    <a href="#shop" class="collection-card collection-large">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=1400&q=85"
+                            alt="Women's fashion collection"
+                        >
+
+                        <div class="collection-overlay"></div>
+
+                        <div class="collection-content">
+
+                            <span>01</span>
+
+                            <h3>WOMEN</h3>
+
+                            <p>Explore Collection</p>
+
+                        </div>
+
+                    </a>
+
+
+                    <div class="collection-column">
+
+                        <a href="#shop" class="collection-card">
+
+                            <img
+                                src="https://images.unsplash.com/photo-1617137968427-85924c800a22?auto=format&fit=crop&w=1200&q=85"
+                                alt="Men's fashion collection"
+                            >
+
+                            <div class="collection-overlay"></div>
+
+                            <div class="collection-content">
+
+                                <span>02</span>
+
+                                <h3>MEN</h3>
+
+                                <p>Explore Collection</p>
+
+                            </div>
+
+                        </a>
+
+
+                        <a href="#shop" class="collection-card">
+
+                            <img
+                                src="https://images.unsplash.com/photo-1496747611176-843222e1e57c?auto=format&fit=crop&w=1200&q=85"
+                                alt="Accessories collection"
+                            >
+
+                            <div class="collection-overlay"></div>
+
+                            <div class="collection-content">
+
+                                <span>03</span>
+
+                                <h3>ACCESSORIES</h3>
+
+                                <p>Complete The Look</p>
+
+                            </div>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================================
+             EDITOR'S PICKS
+        ========================================== -->
+
+        <section class="editors-section">
+
+            <div class="container">
+
+                <div class="section-number">03 / 06</div>
+
+                <div class="editor-layout">
+
+                    <div class="editor-copy">
+
+                        <p class="eyebrow">THE EDIT</p>
+
+                        <h2>
+                            Pieces that
+                            <em>speak</em>
+                            without saying a word.
+                        </h2>
+
+                        <p>
+                            A curated selection of our most distinctive
+                            pieces, chosen for their versatility,
+                            structure and attitude.
+                        </p>
+
+                        <a href="#shop" class="btn btn-dark">
+                            SHOP THE EDIT
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+
+                    </div>
+
+
+                    <div class="editor-images">
+
+                        <div class="editor-image editor-image-main">
+
+                            <img
+                                src="https://images.unsplash.com/photo-1551488831-00ddcb6c6bd3?auto=format&fit=crop&w=1100&q=85"
+                                alt="Editor's fashion pick"
+                            >
+
+                            <span>RM / 01</span>
+
+                        </div>
+
+
+                        <div class="editor-image editor-image-small">
+
+                            <img
+                                src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=900&q=85"
+                                alt="Editorial fashion look"
+                            >
+
+                            <span>RM / 02</span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================================
+             SHOP / TRENDING
+        ========================================== -->
+
+        <section class="shop-section" id="shop">
+
+            <div class="container">
+
+                <div class="section-header shop-header">
+
+                    <div>
+                        <p class="eyebrow">04 / SHOP</p>
+                        <h2>Trending Now</h2>
+                    </div>
+
+
+                    <div class="filter-tabs">
+
+                        <button class="filter-btn active" data-filter="all">
+                            ALL
+                        </button>
+
+                        <button class="filter-btn" data-filter="tops">
+                            TOPS
+                        </button>
+
+                        <button class="filter-btn" data-filter="bottoms">
+                            BOTTOMS
+                        </button>
+
+                        <button class="filter-btn" data-filter="outerwear">
+                            OUTERWEAR
+                        </button>
+
+                        <button class="filter-btn" data-filter="accessories">
+                            ACCESSORIES
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <div class="shop-grid">
+
+
+                    <!-- SHOP PRODUCT 01 -->
+
+                    <article class="shop-product" data-category="tops">
+
+                        <div class="shop-image">
+
+                            <img
+                                src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=900&q=85"
+                                alt="Relaxed fashion top"
+                            >
+
+                            <div class="product-actions">
+
+                                <button class="quick-view">
+                                    QUICK VIEW
+                                </button>
+
+                                <button class="add-cart">
+                                    <i class="fa-solid fa-plus"></i>
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                        <div class="shop-info">
+
+                            <div>
+                                <h3>Relaxed Knit Polo</h3>
+                                <p>Mocha / Soft Knit</p>
+                            </div>
+
+                            <strong>$68</strong>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- SHOP PRODUCT 02 -->
+
+                    <article class="shop-product" data-category="bottoms">
+
+                        <div class="shop-image">
+
+                            <img
+                                src="https://images.unsplash.com/photo-1473966968600-fa801b869a1a?auto=format&fit=crop&w=900&q=85"
+                                alt="Tailored fashion trousers"
+                            >
+
+                            <div class="product-actions">
+
+                                <button class="quick-view">
+                                    QUICK VIEW
+                                </button>
+
+                                <button class="add-cart">
+                                    <i class="fa-solid fa-plus"></i>
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                        <div class="shop-info">
+
+                            <div>
+                                <h3>Wide Leg Tailored Pants</h3>
+                                <p>Charcoal / Wool Blend</p>
+                            </div>
+
+                            <strong>$96</strong>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- SHOP PRODUCT 03 -->
+
+                    <article class="shop-product" data-category="outerwear">
+
+                        <div class="shop-image">
+
+                            <img
+                                src="https://images.unsplash.com/photo-1544022613-e87ca75a784a?auto=format&fit=crop&w=900&q=85"
+                                alt="Minimal leather jacket"
+                            >
+
+                            <span class="shop-badge">BESTSELLER</span>
+
+                            <div class="product-actions">
+
+                                <button class="quick-view">
+                                    QUICK VIEW
+                                </button>
+
+                                <button class="add-cart">
+                                    <i class="fa-solid fa-plus"></i>
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                        <div class="shop-info">
+
+                            <div>
+                                <h3>Essential Leather Jacket</h3>
+                                <p>Black / Genuine Leather</p>
+                            </div>
+
+                            <strong>$220</strong>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- SHOP PRODUCT 04 -->
+
+                    <article class="shop-product" data-category="accessories">
+
+                        <div class="shop-image">
+
+                            <img
+                                src="https://images.unsplash.com/photo-1523779917675-b6ed3a42a561?auto=format&fit=crop&w=900&q=85"
+                                alt="Luxury sunglasses"
+                            >
+
+                            <div class="product-actions">
+
+                                <button class="quick-view">
+                                    QUICK VIEW
+                                </button>
+
+                                <button class="add-cart">
+                                    <i class="fa-solid fa-plus"></i>
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                        <div class="shop-info">
+
+                            <div>
+                                <h3>Frame 01 Sunglasses</h3>
+                                <p>Black / UV Protection</p>
+                            </div>
+
+                            <strong>$75</strong>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- SHOP PRODUCT 05 -->
+
+                    <article class="shop-product" data-category="tops">
+
+                        <div class="shop-image">
+
+                            <img
+                                src="https://images.unsplash.com/photo-1603252110481-7ba873bf42ab?auto=format&fit=crop&w=900&q=85"
+                                alt="White premium shirt"
+                            >
+
+                            <div class="product-actions">
+
+                                <button class="quick-view">
+                                    QUICK VIEW
+                                </button>
+
+                                <button class="add-cart">
+                                    <i class="fa-solid fa-plus"></i>
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                        <div class="shop-info">
+
+                            <div>
+                                <h3>Classic Oxford Shirt</h3>
+                                <p>White / Premium Cotton</p>
+                            </div>
+
+                            <strong>$78</strong>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- SHOP PRODUCT 06 -->
+
+                    <article class="shop-product" data-category="bottoms">
+
+                        <div class="shop-image">
+
+                            <img
+                                src="https://images.unsplash.com/photo-1506629905607-d9e5c7b5c8f3?auto=format&fit=crop&w=900&q=85"
+                                alt="Black relaxed trousers"
+                            >
+
+                            <div class="product-actions">
+
+                                <button class="quick-view">
+                                    QUICK VIEW
+                                </button>
+
+                                <button class="add-cart">
+                                    <i class="fa-solid fa-plus"></i>
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                        <div class="shop-info">
+
+                            <div>
+                                <h3>Relaxed Cargo Trousers</h3>
+                                <p>Black / Cotton Twill</p>
+                            </div>
+
+                            <strong>$84</strong>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================================
+             CAMPAIGN
+        ========================================== -->
+
+        <section class="campaign-section">
+
+            <div class="campaign-image"></div>
+
+            <div class="campaign-overlay"></div>
+
+            <div class="campaign-content">
+
+                <p class="eyebrow">RM CAMPAIGN / 2026</p>
+
+                <h2>
+                    LESS
+                    <em>NOISE.</em>
+                    MORE
+                    <span>YOU.</span>
+                </h2>
+
+                <a href="#lookbook" class="btn btn-light">
+                    VIEW CAMPAIGN
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================================
+             ESSENTIALS
+        ========================================== -->
+
+        <section class="essentials-section">
+
+            <div class="container">
+
+                <div class="section-number">05 / 06</div>
+
+                <div class="essentials-header">
+
+                    <div>
+                        <p class="eyebrow">RM ESSENTIALS</p>
+
+                        <h2>
+                            Built for
+                            <em>every day.</em>
+                        </h2>
+                    </div>
+
+                    <p>
+                        The pieces you reach for without thinking.
+                        Refined basics, elevated materials and
+                        silhouettes that stay relevant.
+                    </p>
+
+                </div>
+
+
+                <div class="essential-grid">
+
+                    <div class="essential-item">
+
+                        <span>01</span>
+
+                        <h3>QUALITY</h3>
+
+                        <p>
+                            Materials selected for comfort,
+                            structure and longevity.
+                        </p>
+
+                    </div>
+
+
+                    <div class="essential-item">
+
+                        <span>02</span>
+
+                        <h3>SIMPLICITY</h3>
+
+                        <p>
+                            Clean design that lets your
+                            personality take the lead.
+                        </p>
+
+                    </div>
+
+
+                    <div class="essential-item">
+
+                        <span>03</span>
+
+                        <h3>VERSATILITY</h3>
+
+                        <p>
+                            Designed to move from morning
+                            streets to late-night plans.
+                        </p>
+
+                    </div>
+
+
+                    <div class="essential-item">
+
+                        <span>04</span>
+
+                        <h3>IDENTITY</h3>
+
+                        <p>
+                            Fashion with enough character
+                            to make the look yours.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================================
+             LOOKBOOK
+        ========================================== -->
+
+        <section class="lookbook-section" id="lookbook">
+
+            <div class="container">
+
+                <div class="section-header">
+
+                    <div>
+                        <p class="eyebrow">06 / LOOKBOOK</p>
+                        <h2>In The Frame</h2>
+                    </div>
+
+                    <a href="#" class="view-all">
+                        VIEW FULL LOOKBOOK
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                </div>
+
+
+                <div class="lookbook-grid">
+
+                    <div class="lookbook-item lookbook-wide">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=1400&q=85"
+                            alt="RM Fashion editorial"
+                        >
+
+                        <span>RM / 01</span>
+
+                    </div>
+
+
+                    <div class="lookbook-item">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1485230895905-ec40ba36b9bc?auto=format&fit=crop&w=900&q=85"
+                            alt="RM Fashion style"
+                        >
+
+                        <span>RM / 02</span>
+
+                    </div>
+
+
+                    <div class="lookbook-item">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=900&q=85"
+                            alt="RM Fashion collection"
+                        >
+
+                        <span>RM / 03</span>
+
+                    </div>
+
+
+                    <div class="lookbook-item lookbook-tall">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1525507119028-ed4c629a60a3?auto=format&fit=crop&w=1000&q=85"
+                            alt="RM Fashion campaign"
+                        >
+
+                        <span>RM / 04</span>
+
+                    </div>
+
+
+                    <div class="lookbook-item">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1496217590455-aa63a8350eea?auto=format&fit=crop&w=900&q=85"
+                            alt="RM Fashion look"
+                        >
+
+                        <span>RM / 05</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================================
+             ABOUT
+        ========================================== -->
+
+        <section class="about-section" id="about">
+
+            <div class="container">
+
+                <div class="about-layout">
+
+                    <div class="about-image">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?auto=format&fit=crop&w=1200&q=85"
+                            alt="RM Fashion House founder"
+                        >
+
+                        <div class="about-label">
+                            RM / EST. 2026
+                        </div>
+
+                    </div>
+
+
+                    <div class="about-content">
+
+                        <p class="eyebrow">OUR STORY</p>
+
+                        <h2>
+                            Modern fashion.
+                            <em>Personal expression.</em>
+                        </h2>
+
+                        <p>
+                            RM Fashion House was created around one simple
+                            idea: great style doesn't need to shout.
+                        </p>
+
+                        <p>
+                            We combine contemporary design with timeless
+                            foundations, creating pieces that feel current
+                            today and remain relevant tomorrow.
+                        </p>
+
+                        <div class="about-signature">
+                            RM
+                        </div>
+
+                        <a href="#" class="text-link">
+                            READ OUR STORY
+                            <span>↗</span>
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================================
+             NEWSLETTER
+        ========================================== -->
+
+        <section class="newsletter-section">
+
+            <div class="container">
+
+                <div class="newsletter-content">
+
+                    <p class="eyebrow">THE RM JOURNAL</p>
+
+                    <h2>
+                        Stay in the
+                        <em>frame.</em>
+                    </h2>
+
+                    <p>
+                        New drops, private offers and stories
+                        from RM Fashion House.
+                    </p>
+
+
+                    <form class="newsletter-form" id="newsletterForm">
+
+                        <input
+                            type="email"
+                            placeholder="Your email address"
+                            required
+                        >
+
+                        <button type="submit">
+                            JOIN RM
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+
+                    </form>
+
+
+                    <small>
+                        By subscribing, you agree to receive RM Fashion House updates.
+                    </small>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================================
+             FOOTER
+        ========================================== -->
+
+        <footer class="footer">
+
+            <div class="container">
+
+                <div class="footer-top">
+
+
+                    <div class="footer-brand">
+
+                        <a href="#home" class="footer-logo">
+                            RM
+                        </a>
+
+                        <p>
+                            Modern fashion for
+                            modern identities.
+                        </p>
+
+                        <div class="footer-socials">
+
+                            <a href="#" aria-label="Instagram">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+
+                            <a href="#" aria-label="Facebook">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+
+                            <a href="#" aria-label="Pinterest">
+                                <i class="fa-brands fa-pinterest-p"></i>
+                            </a>
+
+                            <a href="#" aria-label="TikTok">
+                                <i class="fa-brands fa-tiktok"></i>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="footer-column">
+
+                        <h4>SHOP</h4>
+
+                        <a href="#shop">New Arrivals</a>
+                        <a href="#shop">Men</a>
+                        <a href="#shop">Women</a>
+                        <a href="#shop">Accessories</a>
+                        <a href="#shop">Collections</a>
+
+                    </div>
+
+
+                    <div class="footer-column">
+
+                        <h4>HELP</h4>
+
+                        <a href="#">Shipping & Delivery</a>
+                        <a href="#">Returns</a>
+                        <a href="#">Size Guide</a>
+                        <a href="#">FAQ</a>
+                        <a href="#">Contact</a>
+
+                    </div>
+
+
+                    <div class="footer-column">
+
+                        <h4>CONTACT</h4>
+
+                        <a href="mailto:hello@rmfashionhouse.com">
+                            hello@rmfashionhouse.com
+                        </a>
+
+                        <a href="tel:+8801000000000">
+                            +880 1000 000 000
+                        </a>
+
+                        <p>
+                            Dhaka, Bangladesh
+                            <br>
+                            Worldwide Shipping
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="footer-bottom">
+
+                    <p>
+                        © <span id="currentYear">2026</span>
+                        RM Fashion House. All rights reserved.
+                    </p>
+
+                    <div class="footer-legal">
+
+                        <a href="#">Privacy</a>
+                        <a href="#">Terms</a>
+
+                    </div>
+
+                    <p>
+                        Designed & Developed by RM
+                    </p>
+
+                </div>
+
+            </div>
+
+        </footer>
+
+    </main>
+
+
+    <!-- =========================================
+         QUICK VIEW MODAL
+    ========================================== -->
+
+    <div class="quick-view-modal" id="quickViewModal">
+
+        <div class="modal-backdrop"></div>
+
+        <div class="quick-view-content">
+
+            <button class="modal-close" id="modalClose">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+
+
+            <div class="quick-view-image">
+
+                <img
+                    id="modalProductImage"
+                    src=""
+                    alt="Product preview"
+                >
+
+            </div>
+
+
+            <div class="quick-view-details">
+
+                <p class="eyebrow">RM FASHION HOUSE</p>
+
+                <h2 id="modalProductName">
+                    Product Name
+                </h2>
+
+                <p id="modalProductDescription">
+                    Premium fashion piece designed
+                    for everyday confidence.
+                </p>
+
+                <strong id="modalProductPrice">
+                    $00
+                </strong>
+
+
+                <div class="size-selector">
+
+                    <span>SELECT SIZE</span>
+
+                    <div class="sizes">
+
+                        <button>S</button>
+                        <button>M</button>
+                        <button>L</button>
+                        <button>XL</button>
+
+                    </div>
+
+                </div>
+
+
+                <button class="modal-add-cart">
+                    ADD TO BAG
+                    <i class="fa-solid fa-arrow-right"></i>
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- =========================================
+         CART DRAWER
+    ========================================== -->
+
+    <div class="cart-drawer" id="cartDrawer">
+
+        <div class="cart-backdrop"></div>
+
+        <div class="cart-panel">
+
+            <div class="cart-header">
+
+                <div>
+                    <p class="eyebrow">YOUR BAG</p>
+                    <h2>Your Selection</h2>
+                </div>
+
+                <button class="cart-close" id="cartClose">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+
+            </div>
+
+
+            <div class="cart-items" id="cartItems">
+
+                <div class="empty-cart">
+
+                    <i class="fa-solid fa-bag-shopping"></i>
+
+                    <h3>Your bag is empty</h3>
+
+                    <p>
+                        Discover something worth wearing.
+                    </p>
+
+                    <a href="#shop" class="btn btn-dark cart-shop-btn">
+                        SHOP NOW
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="cart-footer">
+
+                <div class="cart-total">
+
+                    <span>SUBTOTAL</span>
+                    <strong id="cartTotal">$0</strong>
+
+                </div>
+
+                <button class="checkout-btn">
+                    CHECKOUT
+                    <i class="fa-solid fa-arrow-right"></i>
+                </button>
+
+                <small>
+                    Shipping and taxes calculated at checkout.
+                </small>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- =========================================
+         TOAST
+    ========================================== -->
+
+    <div class="toast" id="toast">
+
+        <i class="fa-solid fa-check"></i>
+
+        <span id="toastMessage">
+            Added to your bag
+        </span>
+
+    </div>
+
+
+    <!-- =========================================
+         JAVASCRIPT
+    ========================================== -->
+
+    <script src="script.js"></script>
+
+</body>
+</html>
